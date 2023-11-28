@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: var(--F_WEIGHT_PARA);
+}
+
+/* || Variables */
+:root {
+  /* || FONT */
+  --FONT_FAMILY: "Roboto", sans-serif;
+  --F_WEIGHT_PARA: 400;
+  --F_WEIGHT_HEADER: 700;
+  --F_WEIGHT_EMAIL: 700;
+  --F_SIZE_PARA: 15px;
+  --F_SIZE_HEADER: 3rem;
+
+  /* || COLOR */
+  --BTN-COLOR: hsl(234, 29%, 20%);
+  --HOVER-BTN-COLOR: hsl(4, 100%, 67%);
+  --BODY-COLOR: hsl(235, 18%, 26%);
+  --CARD-COLOR: hsl(0, 0%, 100%);
+  --BTN-TEXT-COLOR: hsl(0, 0%, 100%);
+  --INPUT-BORDER-COLOR: hsl(231, 7%, 60%);
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  width: auto;
+  background-color: var(--BODY-COLOR);
+  justify-content: center;
+  align-items: center;
+}
+
+.news-letter {
+  max-width: fit-content;
+  max-height: 80vh;
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 1rem;
+  background-color: var(--CARD-COLOR);
+  padding: 0.5rem;
+}
+
+h1 {
+  font-size: var(--F_SIZE_HEADER);
+  font-weight: bolder;
+}
+
+.letter-text {
+  display: flex;
+  padding: 2rem 0 2rem 2rem;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: var(--F_SIZE_PARA);
+  font-weight: var(--F_WEIGHT_PARA);
+  font-family: var(--FONT_FAMILY);
+}
+
+.email-address {
+  font-weight: var(--F_WEIGHT_EMAIL);
+  font-size: 11px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 18px 0;
+}
+
+li {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 0.25rem;
+}
+
+li svg {
+  padding-right: 1rem;
+}
+
+div.image {
+  padding: 1rem 0 1rem 0;
+  margin-right: -2rem;
+}
+
+.card-image {
+  height: 100%;
+}
+
+button {
+  display: block;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  color: var(--BTN-TEXT-COLOR);
+  background-color: var(--BTN-COLOR);
+  font-weight: var(--F_WEIGHT_HEADER);
+}
+
+button:hover {
+  background-color: var(--HOVER-BTN-COLOR);
+  color: var(--BTN-TEXT-COLOR);
+  cursor: pointer;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 0.2px solid var(--INPUT-BORDER-COLOR);
+  cursor: pointer;
+}
